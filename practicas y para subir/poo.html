@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Programacion Orientada a objeto</title>
+</head>
+<body>
+    <div class="container my-5">
+        <h1>Estudiantes y profesores</h1>
+
+        <div class="alert alert-danger d-none ">
+           <span> Por favor ingrese todos los datos</span>
+        </div>
+        <form action="" id="formulario">
+            <input type="text" class="form-control mb-2"
+            value="carlos" placeholder="nombre estudiantes"
+            name="nombre" required
+            >
+            <input type="number" class="form-control mb-2"
+            value="2" placeholder="edad Estudiante"
+            name="edad" required
+            >
+
+            <select class="form-select mb-2"  name="opcion aria-label="Default select example">
+               
+                <option value="estudiante" selected>Estudiante</option>
+                <option value="profesor">Profesor</option>
+               
+              </select>
+              <button class="btn btn-primary" type="submit" >Agregar</button>
+        </form>
+
+        <section class="row mt-3"">
+            <div class="col-6" id="cardestudiante">
+                
+            </div>
+            <div class="col-6" id="cardprofesor">
+               
+            </div>
+        </section>
+
+    </div>
+
+    <template id="estudiantes">
+        <article class="card mb-2 shadow">
+            <div class="card-body">
+                <h5 >
+                <span class="text-primary"></span>
+                <span class="badge bg-success"></span>
+                </h5>
+                <h6></h6>
+                <p class="lead">edad</p>
+                <button class="btn btn-success">aprobar</button>
+                <button class="btn btn-danger">Reprobar</button>
+            </div>
+        </article>
+    </template>
+
+
+    <template id="profesores">
+        <article class="card mb-2 bg-dark text-white">
+            <div class="card-body">
+                <h5>Nombre profesor</h5>
+                <h6>profesor</h6>
+                <p class="lead">edad</p>
+            </div>
+        </article>
+    </template>
+    
+
+
+
+    <script src="./poo.js"></script>
+</body>
+</html>

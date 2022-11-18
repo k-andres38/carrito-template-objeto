@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>API The Rick and Mortty</title>
+</head>
+<body>
+    <main class="conatiner my-5">
+       <section class="d-flex align-items-center d-none" id="load">
+        <strong>Loading...</strong>
+        <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+       </section>
+       <section class="row" id="card-dinamicas">
+            
+       </section>
+    </main>
+
+
+    <template id="templateid">
+        <article class="col-12 col-md-6 col-lg-3 mb-3">
+            <div class="card text-center shadow">
+                <img src="" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title text-primary lead nombre">el nombre de personaje</h5>
+                    <p class="lead text-secondary specie">Human</p>
+  
+                        <span class="text-primary genero">Genero:</span>
+                        <span class="text-muted generoe"></span>
+                </div>
+            </div>
+        </article>
+    </template>
+    
+
+    <script src="./api.js"></script>
+</body>
+</html>
